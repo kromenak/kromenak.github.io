@@ -1,0 +1,129 @@
+/* These are all tweaks/overrides to the beautifulhugo theme.
+   It's a nice theme, but I prefer different spacings or stylings in certain cases. */
+
+/* 
+ * GENERAL
+ * Broad sitewide adjustments to base HTML tags.
+ */
+/* Paragraphs have margin at bottom. 
+   I like this because paragraphs are more associated with headers this way. */
+p {
+  margin: 0px 0px;
+  margin-bottom: 25px;
+}
+
+/* Paragraphs within a list item have smaller margins. This helps on resume page, for example */
+li p {
+    margin: 10px 0px;
+}
+
+/* For the most part, header h1 text looks better centered. */
+header h1 {
+  text-align: center;
+}
+
+/* 
+ * HEADERS
+ * Page header text tweaks.
+ */
+/* Reduce size of site title on homepage, remove border. */
+.intro-header .page-heading h1 {
+  font-size: 1.4em;
+  border-bottom: 0;
+}
+
+/* For whatever reason, tag header text looks totally different.
+   Just have it use similar styles to other header texts. */
+.intro-header .tags-heading h1 {
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+/* 
+ * WELL
+ * On list type pages, page text appears in this "well" section.
+ */
+/* Present the well like normal post text.
+   No background color, no border, no padding. */
+.well {
+  background-color: transparent;
+  border: 0px;
+  border-radius: 0px;
+  box-shadow: 0 0px 0px rgba(0,0,0,.05);
+  padding: 0px;
+}
+
+/* Don't put extra margin at bottom of well text. */
+.well p {
+  margin-bottom: 0px;
+}
+
+/* 
+ * POST PREVIEW
+ * Post previews appear on list-like pages.
+ */
+/* Links inside post preview body should stand out, rather than default behavior of hiding in text. */
+.post-preview .post-entry a {
+  color: #008AFF;
+}
+
+/* 
+ * POST
+ * An individual post/article.
+ */
+/* Make sizing on post titles match sizing on post previews (and left aligned). */
+.intro-header .post-heading h1 {
+  font-size: 30px;
+  margin-top: 0;
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  .intro-header .post-heading h1 {
+    font-size: 36px;
+    text-align: left;
+  }
+}
+
+/* Put additional spacing between list items to help with readability. */
+article ol li {
+  margin: 20px 0px;
+}
+article ul li {
+  margin: 20px 0px;
+}
+
+/* Some tweaks to sizes of post h1/h2/h3 headers to be a little more different in size.
+   Otherwise, all headers look the same, which makes it hard to parse the page hierarchy. */
+article h1 {
+  font-size: 1.75em;
+  border-bottom: 2px solid;
+}
+article h2 {
+  font-size: 1.4em;
+  margin-bottom: 2px;
+}
+article h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+/* Causes some extra space to be placed after a youtube video.
+   May also affect other elements though... */
+article div {
+	margin-bottom: 20px;
+}
+
+/* 
+ * Footer
+ * Bottom of pages.
+ */
+/* Reduce padding a bit to reduce gap between footer start and actual footer content. */
+footer {
+  padding: 15px 0;
+}
+
+/* Increase padding at top of copyright message in footer. */
+footer .copyright {
+  padding: 10px 0 0 0;
+}

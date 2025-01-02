@@ -1,0 +1,35 @@
+/* This CSS file contains misc CSS helpers to make the site look better. */
+
+/* These img blocks allow you to align images from markdown files
+   for example, /img/portfolio/bagit_promo.png#center */
+img[src$="#center"]
+{
+  display: block;
+  margin: 0.7rem auto; /* you can replace '0.7rem' by, but keep the horizontal 'auto' for this to work */
+}
+img[src$="#floatleft"]
+{
+  float:left;
+  margin: 0.7rem;      /* this margin is totally up to you */
+}
+img[src$="#floatright"]
+{
+  float:right;
+  margin: 0.7rem;      /* this margin is totally up to you */
+}
+
+/* Helpers for the dark mode toggle in the nav bar.
+   Reserves 45px for the toggle, and then uses sun/moon icons when appropriate.
+   Also see darkModeToggle.js. */
+#dark-mode-toggle {
+  min-width: 45px;
+}
+#icon-sun {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+#icon-moon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: none;
+}
