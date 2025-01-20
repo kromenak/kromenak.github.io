@@ -33,8 +33,12 @@
   color: #000;
   text-decoration: none;
 }
+.box-masonry h3 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
 .box-masonry .box-masonry-text {
-  padding: 10px 10px 10px;
+  padding: 5px 5px 5px;
 }
 .box-masonry .box-masonry-text p {
   color: #999999;
