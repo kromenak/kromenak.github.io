@@ -35,8 +35,43 @@ header h1 {
 /* For whatever reason, tag header text looks totally different.
    Just have it use similar styles to other header texts. */
 .intro-header .tags-heading h1 {
-  font-size: 2em;
-  margin-top: 20px;
+  font-size: 1.4em;
+  margin-top: 0;
+}
+
+/* About page heading and subheading. */
+.about-heading h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.4em;
+  border-bottom: 0;
+}
+
+.about-subheading {
+    font-size: 27px;
+    line-height: 1.1;
+    display: block;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+/* Portfolio page heading and subheading. */
+.portfolio-heading h1 {
+  margin-top: 0;
+  font-size: 1.4em;
+  border-bottom: 0;
+}
+
+.portfolio-subheading {
+    font-size: 27px;
+    line-height: 1.1;
+    display: block;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    margin: 10px 0 0;
+    text-align: center;
 }
 
 /* 
@@ -89,6 +124,13 @@ article ol li {
   margin: 20px 0px;
 }
 article ul li {
+  margin: 20px 0px;
+}
+
+.container ol li {
+  margin: 20px 0px;
+}
+.container ul li {
   margin: 20px 0px;
 }
 
